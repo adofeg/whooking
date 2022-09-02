@@ -1,0 +1,256 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Houzez CRM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-22 01:08+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.2\n"
+"X-Domain: houzez-crm"
+
+#: includes/class-notes.php:83
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add insights for favethemes themes"
+msgstr ""
+
+#: includes/class-notes.php:57
+msgid "Add successfully"
+msgstr ""
+
+#: houzez-crm.php:123
+msgid "Are you sure you want to delete?"
+msgstr ""
+
+#: houzez-crm.php:118
+msgid "Are you sure you want to do this?"
+msgstr ""
+
+#: houzez-crm.php:124
+msgid "Are you sure you want to send email?"
+msgstr ""
+
+#: houzez-crm.php:120
+msgid "Cancel"
+msgstr ""
+
+#: houzez-crm.php:121
+msgid "Confirm"
+msgstr ""
+
+#: includes/settings/class-crm-settings-api.php:719
+#: includes/settings/class-crm-settings-api.php:720
+msgid "CRM Settings"
+msgstr ""
+
+#: includes/class-deals.php:323
+msgid "Deal not added!"
+msgstr ""
+
+#: includes/class-deals.php:318
+msgid "Deal Successfully added!"
+msgstr ""
+
+#: includes/class-deals.php:307
+msgid "Deal Successfully updated!"
+msgstr ""
+
+#: includes/settings/settings-init.php:32
+msgid "Deals Settings"
+msgstr ""
+
+#: houzez-crm.php:119 includes/class-notes.php:89
+msgid "Delete"
+msgstr ""
+
+#: includes/class-enquiry.php:552
+msgid "Email Sent Successfully!"
+msgstr ""
+
+#: includes/settings/settings-init.php:28
+msgid "Enquiries Settings"
+msgstr ""
+
+#: includes/settings/enquiry-settings.php:14
+msgid "Enquiry Type"
+msgstr ""
+
+#: includes/class-enquiry.php:21
+msgid "Enter a valid contact"
+msgstr ""
+
+#: includes/class-deals.php:296
+msgid "Enter deal value"
+msgstr ""
+
+#. Author of the plugin
+msgid "Favethemes"
+msgstr ""
+
+#. Name of the plugin
+msgid "Houzez CRM"
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://themeforest.net/user/favethemes"
+msgstr ""
+
+#: includes/class-leads.php:32
+msgid "Invalid email address."
+msgstr ""
+
+#: includes/settings/lead-settings.php:14
+msgid "Lead Prefix"
+msgstr ""
+
+#: includes/class-leads.php:53
+msgid "Lead Successfully added!"
+msgstr ""
+
+#: includes/class-leads.php:42
+msgid "Lead Successfully updated!"
+msgstr ""
+
+#: includes/settings/settings-init.php:24
+msgid "Leads Settings"
+msgstr ""
+
+#: includes/class-enquiry.php:532
+#, php-format
+msgid "Matched Listing Email from %s"
+msgstr ""
+
+#: includes/settings/deals-settings.php:22
+msgid "Next Action"
+msgstr ""
+
+#: includes/class-enquiry.php:491
+msgid "No enquiry selected"
+msgstr ""
+
+#: includes/class-deals.php:28 includes/class-leads.php:699
+msgid "No lead id found"
+msgstr ""
+
+#: includes/class-viewed.php:23
+msgid "No listing selected"
+msgstr ""
+
+#: houzez-crm.php:309 houzez-crm.php:317
+msgid "Not good; huh?"
+msgstr ""
+
+#: includes/class-deals.php:123 includes/class-deals.php:168
+#: includes/class-deals.php:213 includes/class-deals.php:257
+msgid "Not updated, there is error"
+msgstr ""
+
+#: includes/class-notes.php:27
+msgid "Please enter note!"
+msgstr ""
+
+#: includes/class-leads.php:27
+msgid "Please enter your full name!"
+msgstr ""
+
+#: includes/class-leads.php:22
+msgid "Please select title!"
+msgstr ""
+
+#: houzez-crm.php:117
+msgid "Processing, Please wait..."
+msgstr ""
+
+#: includes/settings/lead-settings.php:15
+msgid ""
+"Provide comma separated values e.g (Mr, Mrs, Ms, Miss, Dr, Prof, Mr & Mrs)."
+msgstr ""
+
+#: includes/settings/deals-settings.php:15
+msgid ""
+"Provide comma separated values e.g (New Lead, Meeting Scheduled, Qualified, "
+"Proposal Sent, Called, Negotiation, Email Sent). First value will be "
+"considered default."
+msgstr ""
+
+#: includes/settings/enquiry-settings.php:15
+msgid ""
+"Provide comma separated values e.g (Purchase, Rent, Sell, Miss, Evaluation, "
+"Mortgage)."
+msgstr ""
+
+#: includes/settings/deals-settings.php:23
+msgid ""
+"Provide comma separated values e.g (Qualification, Demo, Call, Send a "
+"Proposal, Send an Email, Follow Up, Meeting). First value will be considered "
+"default."
+msgstr ""
+
+#: includes/settings/lead-settings.php:22
+msgid ""
+"Provide comma separated values e.g (Website, Newspaper, Friend, Google, "
+"Facebook)."
+msgstr ""
+
+#: includes/class-notes.php:21 includes/class-deals.php:22
+#: includes/class-leads.php:693
+msgid "Security check failed!"
+msgstr ""
+
+#: includes/class-deals.php:288
+msgid "Select contact name"
+msgstr ""
+
+#: includes/class-enquiry.php:26
+msgid "Select property type"
+msgstr ""
+
+#: includes/class-enquiry.php:558
+msgid "Server Error: Make sure Email function working on your server!"
+msgstr ""
+
+#: includes/class-enquiry.php:458 includes/class-deals.php:69
+#: includes/class-leads.php:102
+msgid "Something went wrong!"
+msgstr ""
+
+#: includes/settings/lead-settings.php:21
+msgid "Source"
+msgstr ""
+
+#: includes/settings/deals-settings.php:14
+msgid "Status"
+msgstr ""
+
+#: includes/class-enquiry.php:44
+msgid "Successfully added!"
+msgstr ""
+
+#: includes/class-deals.php:129 includes/class-deals.php:174
+#: includes/class-deals.php:219 includes/class-deals.php:263
+msgid "Successfully updated"
+msgstr ""
+
+#: includes/class-enquiry.php:36
+msgid "Successfully updated!"
+msgstr ""
+
+#: includes/class-deals.php:280
+msgid "Title is empty"
+msgstr ""
+
+#: includes/class-enquiry.php:534
+msgid "We found these listings against your inquiry"
+msgstr ""
