@@ -16,11 +16,22 @@
 
                         <input type="hidden" name="hpage" value="leads">
 
-                        <!-- <input type="text" name="search-param" placeholder="Nombre, Apellido o E-mail" id="search-param" /> -->
+                        <input type="text" name="search-param" placeholder="Nombre, Apellido o E-mail" id="search-param" />
+
+                        <select name="tipo" id="tipo">
+                            
+                        <?php
+                            $types = Houzez_leads::get_leads_types();
+                            foreach($types as $type){
+                                echo "<option value=".$type['type'].">".strtoupper($type['type'])."</option>";
+                            }
+                            ?>
+                        </select>
 
                         <input class="btn btn-primary" type="submit" value="Filtrar">
 
                     </form>
+                    
 
                 </div>
 

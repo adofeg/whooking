@@ -471,3 +471,42 @@ function hcrm_get_taxonomy($taxonomy_name, $taxonomy_terms, $searched_term = "",
         }
     }
 }
+
+function hcrm_get_area(){
+    $taxonomy_name = 'property_area';
+    //$searched_term = "";
+    $prefix = " ";
+    $html="";
+
+    if(isset($_POST['ciudad'])){
+        $ciudad=sanitize_text_field($_POST['ciudad']);
+    }
+    
+    $taxonomy_terms = get_terms (
+        array(
+            $taxonomy_name
+        ),
+        array(
+            'orderby' => 'name',
+            'order' => 'ASC',
+            'hide_empty' => false,
+            'parent' => 0
+        )
+    );
+
+    if (!empty($taxonomy_terms)) {
+        foreach ($taxonomy_terms as $term) {
+
+            $term_meta= get_option( "_houzez_property_area_$term->term_id");
+            $parent_city = sanitize_title($term_meta['parent_city']);
+            if(urldecode($parent_city)==$ciudad){
+                $html.= '<option data-ref="' . urldecode($term->slug) . '" data-belong="'.urldecode($parent_city).'" value="' . urldecode($term->slug) . '">' . esc_attr($prefix) . esc_attr($term->name) .'</option>';
+            }
+         
+        }
+    }
+    wp_send_json_success(array( 'opciones' => $html ) );
+}
+
+add_action( 'wp_ajax_nopriv_update_area', 'hcrm_get_area' );
+add_action( 'wp_ajax_update_area', 'hcrm_get_area' );

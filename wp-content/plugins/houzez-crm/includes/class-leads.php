@@ -541,6 +541,12 @@ if ( ! class_exists( 'Houzez_Leads' ) ) {
 				$where_nuevo.="(first_name like '%".$parametro."%' OR last_name like '%".$parametro."%' OR email like '%".$parametro."%') AND ";
 
 			}
+
+			if(isset($_GET['tipo'])){
+				$tipo=sanitize_text_field( $_GET['tipo']);
+				$where_nuevo.="type like '%".$tipo."%' AND ";
+
+			}
 			
 			$where_nuevo.= "(user_id='".$usuario."' OR user_id='1') AND lead_id NOT IN (SELECT lead_id from ".$table_name2." WHERE (user_id='".$usuario."' or user_id='0'))";
 			
@@ -561,6 +567,16 @@ if ( ! class_exists( 'Houzez_Leads' ) ) {
 			);
 			//echo "<script>alert('".$query."')</script>";
 			return $return_array;
+		}
+
+		public static function get_leads_types() {
+			global $wpdb;
+            $table_name = $wpdb->prefix . 'houzez_crm_leads';
+			$query="SELECT DISTINCT(type) FROM $table_name order by type";
+            
+			$results = $wpdb->get_results( $query, ARRAY_A );
+			
+			return $results;
 		}
 
 

@@ -194,7 +194,7 @@ if( isset( $_GET['prop_status'] ) && $_GET['prop_status'] == 'approved' ) {
 
 
 	}
-	/*if( !empty($dashboard_membership) && $enable_paid_submission == 'membership' && houzez_check_role() ) {
+	if( !empty($dashboard_membership) && $enable_paid_submission == 'membership' && houzez_check_role() ) {
 		echo '<li class="menu-lateral-item">
 				<a '.esc_attr($ac_mem).' href="'.esc_attr($dashboard_membership).'">
 					<i class="houzez-icon icon-task-list-text-1 mr-2"></i> '.houzez_option('dsh_membership', 'Membership').'
@@ -209,7 +209,7 @@ if( isset( $_GET['prop_status'] ) && $_GET['prop_status'] == 'approved' ) {
 				</a>
 			</li><div class="espacio-lista"></div>';
     }
-	*/
+	
 
 
 	if( !empty( $dashboard_centro_ayuda ) && houzez_check_role() ) {

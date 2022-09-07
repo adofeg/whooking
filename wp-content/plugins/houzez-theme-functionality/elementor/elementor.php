@@ -123,6 +123,7 @@ if( ! class_exists( 'Houzez_Elementor_Extensions' ) ) {
                 require_once HOUZEZ_PLUGIN_PATH . '/elementor/widgets/agents.php';
                 require_once HOUZEZ_PLUGIN_PATH . '/elementor/widgets/contact-form.php';
                 require_once HOUZEZ_PLUGIN_PATH . '/elementor/widgets/inquiry-form.php';
+                require_once HOUZEZ_PLUGIN_PATH . '/elementor/widgets/inquiry-whooking-form.php';
                 require_once HOUZEZ_PLUGIN_PATH . '/elementor/widgets/testimonials.php';
                 require_once HOUZEZ_PLUGIN_PATH . '/elementor/widgets/testimonials-v2.php';
                 require_once HOUZEZ_PLUGIN_PATH . '/elementor/widgets/team-member.php';

@@ -199,7 +199,7 @@ if( isset( $_GET['agents'] ) && $_GET['agents'] == 'list' ) {
 				</li>';
 	    }
 		*/
-		/*
+		
 		if( !empty($dashboard_membership) && $enable_paid_submission == 'membership' && houzez_check_role() ) {
 			echo '<li class="nav-item">
 					<a '.esc_attr($ac_mem).' href="'.esc_attr($dashboard_membership).'">
@@ -215,7 +215,7 @@ if( isset( $_GET['agents'] ) && $_GET['agents'] == 'list' ) {
 					</a>
 				</li>';
 	    }
-		*/
+		
 	    if( !empty( $dashboard_msgs ) ) {
             echo '<li class="nav-item">
                     <a '.esc_attr(  $ac_msgs ).' href="'.esc_url($dashboard_msgs).'">
