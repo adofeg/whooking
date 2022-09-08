@@ -1,0 +1,17 @@
+#irpf {
+	color: #444;
+	padding: 2px;
+	line-height: 28px;
+	-o-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.nif_checkout:before {
+	content:"";
+	display:block;
+	clear:both;
+}
