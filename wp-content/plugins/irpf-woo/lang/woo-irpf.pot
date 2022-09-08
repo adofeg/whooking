@@ -1,0 +1,156 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Retención del IRPF en WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-23 12:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.0; wp-5.7-alpha-49876\n"
+"X-Domain: woo-irpf"
+
+#: checkout.php:53 clase.php:111 usuario.php:28
+msgid "Actividad"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Aplica la retención del IRPF en el checkout de WooCommerce en función de si "
+"el cliente es particular o profesional/empresa"
+msgstr ""
+
+#: usuario.php:34
+msgid "Autónomo"
+msgstr ""
+
+#: checkout.php:35
+msgid "CIF <abbr class=\"required\" title=\"obligatorio\">*</abbr>"
+msgstr ""
+
+#: irpf-woo.php:82
+#, php-format
+msgid ""
+"El plugin %s necesita que WooCommerce esté activado. Por favor, activa "
+"WooCommerce primero."
+msgstr ""
+
+#: checkout.php:47
+msgid "Elige una opción"
+msgstr ""
+
+#: usuario.php:35
+msgid "Empresa"
+msgstr ""
+
+#. Author of the plugin
+msgid "Enrique J. Ros"
+msgstr ""
+
+#: irpf-woo.php:99
+#, php-format
+msgid ""
+"Gracias por usar %s. Ve a la página de ajustes para configurar el plugin."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.enriquejros.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://www.enriquejros.com/plugins/retencion-irpf-woocommerce/"
+msgstr ""
+
+#: opciones.php:34
+msgid "Impuesto a aplicar"
+msgstr ""
+
+#: opciones.php:55
+msgid "Insertarlo en las facturas"
+msgstr ""
+
+#: checkout.php:34
+msgid "NIF <abbr class=\"required\" title=\"obligatorio\">*</abbr>"
+msgstr ""
+
+#: clase.php:114 nif.php:41 usuario.php:40
+msgid "NIF/CIF"
+msgstr ""
+
+#: checkout.php:36
+msgid "NIF/CIF <abbr class=\"required\" title=\"obligatorio\">*</abbr>"
+msgstr ""
+
+#: nif.php:67
+msgid "NIF/CIF: "
+msgstr ""
+
+#: usuario.php:33
+msgid "Particular"
+msgstr ""
+
+#: opciones.php:44
+msgid "Pedir el NIF/CIF"
+msgstr ""
+
+#: checkout.php:65
+msgid "Por favor, selecciona una actividad"
+msgstr ""
+
+#: opciones.php:28
+msgid "Retención del IRPF"
+msgstr ""
+
+#. Name of the plugin
+#: irpf-woo.php:36
+msgid "Retención del IRPF en WooCommerce"
+msgstr ""
+
+#: opciones.php:38
+msgid ""
+"Selecciona cuál es la clase de impuestos en la que se aplica la retención"
+msgstr ""
+
+#: opciones.php:59
+msgid ""
+"Selecciona para añadir el NIF/CIF en las facturas de WooCommerce PDF "
+"Invoices & Packing Slips"
+msgstr ""
+
+#: opciones.php:48
+msgid "Selecciona para añadir un campo para el NIF/CIF en el checkout"
+msgstr ""
+
+#: usuario.php:32
+msgid "Selecciona..."
+msgstr ""
+
+#: irpf-woo.php:124
+msgid "Soporte"
+msgstr ""
+
+#: checkout.php:49
+msgid "Soy autónomo"
+msgstr ""
+
+#: checkout.php:50
+msgid "Soy empresa"
+msgstr ""
+
+#: checkout.php:48
+msgid "Soy particular"
+msgstr ""
+
+#: opciones.php:64
+msgid "Texto antes del dato"
+msgstr ""
+
+#: opciones.php:68
+msgid "Texto que se antepondrá al dato en la factura"
+msgstr ""

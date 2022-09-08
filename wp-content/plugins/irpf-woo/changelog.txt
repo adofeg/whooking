@@ -1,0 +1,76 @@
+*** Retención del IRPF en WooCommerce Changelog ***
+
+Versión 1.4.2, 23 enero 2021
+---------------------------------------------------------------------------------------
+* Añadido - Se incluye la cabecera de versión mínima de PHP requerida
+* Fix     - Se previene un aviso en caso de que no se esté ejecutando AJAX
+* Update  - Soporte para WooCommerce 5.0
+
+Versión 1.4.1, 19 enero 2021
+---------------------------------------------------------------------------------------
+* Fix - Se previene un aviso en caso de que no se haya configurado ningún impuesto como retención
+
+Versión 1.4.0, 23 diciembre 2020
+---------------------------------------------------------------------------------------
+* Añadido - Filtro irpf_woo_aplicar para deshabilitar la retención para alguno de los tipos de profesional
+* Añadido - Se incluye el archivo loco.xml para configuración automática de Loco Translate
+* Mejora  - Mejora de la seguridad
+* Fix     - Añadido el text domain a una cadena que había quedado fuera
+* Update  - Soporte para WordPress 5.7
+* Update  - Soporte para WooCommerce 4.9
+* Update  - Actualizada la plantilla POT para traducciones
+
+Versión 1.3.2, 23 septiembre 2020
+---------------------------------------------------------------------------------------
+* Fix    - Solucionado un error, introducido en la última versión, que en determinadas configuraciones podía hacer que no se aplicara la retención
+* Update - Plugin probado con WooCommerce 4.6-RC1
+
+Versión 1.3.1, 22 septiembre 2020
+---------------------------------------------------------------------------------------
+* Añadido - Se incluye la plantilla POT para traducciones
+* Mejora  - Mejoras de eficiencia en el init
+* Fix     - Solucionado un aviso que se generaba si no se habían guardado previamente los ajustes del plugin
+* Update  - Plugin probado con WordPress 5.6-alpha
+* Update  - Plugin probado con WooCommerce 4.5
+* Update  - Actualizada la librería PUC a la versión 4.9
+
+Versión 1.3.0, 11 diciembre 2019
+---------------------------------------------------------------------------------------
+* Mejora - Nueva función más eficiente para la carga de traducciones compatible con WordPress 5.3
+* Mejora - Se declara el alcance de todos los métodos de forma explícita
+* Mejora - Se implementa un patrón singleton en la llamada a la clase principal del plugin
+* Mejora - Se mejora la eficiencia prescindiendo del archivo setup.php
+* Fix    - Se añade el nombre del plugin al text domain para hacerlo traducible
+* Update - Plugin probado con la versión 5.3.1 de WordPress
+* Update - Plugin probado con la versión 3.9.0-beta de WooCommerce
+* Update - Actualizada la librería PUC a la versión 4.6
+
+Versión 1.2.2, 7 noviembre 2018
+---------------------------------------------------------------------------------------
+* Mejora - Añadido un mensaje de ayuda tras la activación del plugin
+* Update - Adaptada la función que establece la posición del campo a los cambios introducidos en WooCommerce 3.5.1
+* Update - Actualizada la librería PUC a la versión 4.4
+
+Versión 1.2.1, 21 mayo 2018
+---------------------------------------------------------------------------------------
+* Fix - Eliminación de dos hooks sin usar en el archivo usuario.php que llamaban a funciones inexistentes desde la versión 1.2.0
+
+Versión 1.2.0, 15 mayo 2018
+---------------------------------------------------------------------------------------
+* Añadido - El NIF/CIF y la actividad se añaden al perfil del usuario y pueden ser editados por el administrador
+* Añadido - El impuesto aplicado queda registrado en los datos meta del pedido
+* Mejora  - Si se crea el usuario al realizar el pedido, estos datos quedan guardados en su perfil
+* Mejora  - Los datos aparecen ya preseleccionados en el checkout si están en el perfil del usuario
+
+Versión 1.1.1, 10 febrero 2018
+---------------------------------------------------------------------------------------
+* Fix - Añadido el directorio para traducciones
+
+Versión 1.1.0, 7 febrero 2018
+---------------------------------------------------------------------------------------
+* Añadido - Posibilidad de añadir un campo para el NIF en el checkout
+* Añadido - Posibilidad de incluir el NIF en las facturas emitidas con WooCommerce PDF Invoices & Packing Slips
+
+Versión 1.0.0, 4 febrero 2018
+---------------------------------------------------------------------------------------
+* Release - Versión inicial

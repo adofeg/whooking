@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="Retención del IRPF en WooCommerce">
+  <domain name="woo-irpf">
+    <project name="Retención del IRPF en WooCommerce" slug="woo-irpf">
+      <source>
+        <directory>.</directory>
+      </source>
+      <target>
+        <directory>lang</directory>
+      </target>
+      <template>
+        <file>lang/woo-irpf.pot</file>
+      </template>
+    </project>
+  </domain>
+  <exclude>
+    <directory>includes</directory>
+  </exclude>
+</bundle>
