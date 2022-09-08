@@ -11,27 +11,38 @@
                 <h1><?php echo houzez_option('dsh_leads', 'Leads'); ?></h1>
 
                 <div class="search-bar">
-
                     <form method="GET" action="https://www.whooking.com/board/">
-
                         <input type="hidden" name="hpage" value="leads">
+                        <div class="row">
+                            <div class="col-sm-5 col-md-5 col-xl-3">
+                                <div class="form-group">
+                                    <input type="text" name="search-param" placeholder="Nombre, Apellido o E-mail" id="search-param" class="form-control" value="<?= isset($_GET["search-param"]) ? trim($_GET["search-param"]) : "" ?>" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-5 col-xl-4">
+                                <div class="form-group">
 
-                        <input type="text" name="search-param" placeholder="Nombre, Apellido o E-mail" id="search-param" />
+                                    <select name="tipo" id="tipo" class="form-control">
 
-                        <select name="tipo" id="tipo">
-                            
-                        <?php
-                            $types = Houzez_leads::get_leads_types();
-                            foreach($types as $type){
-                                echo "<option value=".$type['type'].">".strtoupper($type['type'])."</option>";
-                            }
-                            ?>
-                        </select>
-
-                        <input class="btn btn-primary" type="submit" value="Filtrar">
-
+                                        <?php
+                                        $miType = isset($_GET["tipo"]) ? trim($_GET["tipo"]) : "";
+                                        $types = Houzez_leads::get_leads_types();
+                                        echo "<option value=''" . ($miType == "" ? "selected" : "") . ">Todos</option>";
+                                        foreach ($types as $type) {
+                                            if (trim($type['type']) != "") {
+                                                echo "<option value='" . $type['type'] . "' " . ($miType == $type["type"] ? "selected" : "") . ">" . strtoupper($type['type']) . "</option>";
+                                            }
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-xl-3">
+                                <input class="btn btn-primary" type="submit" value="Filtrar">
+                            </div>
+                        </div>
                     </form>
-                    
+
 
                 </div>
 
@@ -55,9 +66,9 @@
 
 <section class="dashboard-content-wrap">
 
-    <div class="dashboard-content-inner-wrap">
+    <div class="dashboard-content-inner-wrap p-0">
 
-        <div class="dashboard-content-block-wrap leads-padding">
+        <div class="dashboard-content-block-wrap leads-padding p-4">
 
 
 
@@ -134,15 +145,15 @@
 
 
 
-                            <tr>
+                            <tr class="table-responsive-contact">
 
-                                <td class="table-nowrap" data-label="<?php esc_html_e('Name', 'houzez'); ?>">
+                                <td class="table-wrap" data-label="<?php esc_html_e('Name', 'houzez'); ?>">
 
                                     <?php echo esc_attr($result->display_name); ?>
 
                                 </td>
 
-                                <td data-label="<?php esc_html_e('Email', 'houzez'); ?>">
+                                <td class="table-wrap" data-label="<?php esc_html_e('Email', 'houzez'); ?>">
 
                                     <a href="mailto:<?php echo esc_attr($result->email); ?>">
 
@@ -152,13 +163,13 @@
 
                                 </td>
 
-                                <td data-label="<?php esc_html_e('Phone', 'houzez'); ?>">
+                                <td class="table-wrap" data-label="<?php esc_html_e('Phone', 'houzez'); ?>">
 
                                     <?php echo esc_attr($result->mobile); ?>
 
                                 </td>
 
-                                <td data-label="<?php esc_html_e('Type', 'houzez'); ?>">
+                                <td class="table-wrap" data-label="<?php esc_html_e('Type', 'houzez'); ?>">
 
                                     <?php
 
@@ -170,7 +181,7 @@
 
                                 </td>
 
-                                <td class="table-nowrap" data-label="<?php esc_html_e('Date', 'houzez'); ?>">
+                                <td class="table-wrap" data-label="<?php esc_html_e('Date', 'houzez'); ?>">
 
                                     <?php echo esc_attr($get_date); ?><br>
 
@@ -178,7 +189,7 @@
 
                                 </td>
 
-                                <td>
+                                <td class="table-wrap">
 
                                     <div class="dropdown property-action-menu">
 
