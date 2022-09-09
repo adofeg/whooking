@@ -12,27 +12,28 @@ if ($is_not_lead_detail) {
 }
 
 $dashboard_crm = houzez_get_template_link_2('template/user_dashboard_crm.php');
+?>
+<div class="d-flex justify-content-between mb-3 pl-3 pr-3">
+    <div class="pl-1 pr-1"><?php echo esc_attr($all_enquires['data']['total_records']); ?> <?php esc_html_e('Solicitudes encontradas', 'houzez'); ?></div>
+    <div>
 
+        <button id="enquiry_delete_multiple" class="btn btn-danger ">
+            <i class="houzez-icon icon-remove-circle mr-1"></i>
+            <?php esc_html_e('Delete', 'houzez'); ?>
+        </button>
+    </div>
+
+</div>
+<div>
+    <?php
+    echo do_shortcode("[filtro_area]");
+    ?>
+
+</div>
+<?php
 if (!empty($all_enquires['data']['results'])) {
 ?>
-    <div class="d-flex justify-content-between mb-3 p-3">
-        <div><?php echo esc_attr($all_enquires['data']['total_records']); ?> <?php esc_html_e('Solicitudes encontradas', 'houzez'); ?></div>
-        <div>
-
-            <button id="enquiry_delete_multiple" class="btn btn-danger btn-slim ">
-                <i class="houzez-icon icon-remove-circle mr-1"></i>
-                <?php esc_html_e('Delete', 'houzez'); ?>
-            </button>
-        </div>
-
-    </div>
-    <div>
-        <?php
-        echo do_shortcode("[filtro_area]");
-        ?>
-
-    </div>
-    <div class="pl-3 pr-3">
+    <div class="pl-4 pr-4 overflow-auto">
         <table class="dashboard-table table-lined table-hover responsive-table">
             <thead>
                 <tr>
